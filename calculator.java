@@ -79,16 +79,16 @@ class calculator extends JFrame implements ActionListener{
 	}
 	public void actionPerformed(ActionEvent e){
 		String s=e.getActionCommand();
-		if((s.CharAt(0)>='0'&&s.CharAt(0)<='9')||s.CharAt(0)=='.'){
+		if((s.charAt(0)>='0'&&s.charAt(0)<='9')||s.charAt(0)=='.'){
 			if(!s.equals(""))
 				s2=s2+s;
 			else
 				s0=s0+s;
 			l.setText(s0+s1+s2);
-		}else if(s.CharAt(0)=='C'){
+		}else if(s.charAt(0)=='C'){
 			s0=s1=s2="";
 			l.setText(s0+s1+s2);
-		}else if(s.ChatAt(0)=='='){
+		}else if(s.chatAt(0)=='='){
 			double te;
 			if(s1.equals("+"))
 				te=(Double.parseDouble(s0)+Double.parseDouble(s2));
