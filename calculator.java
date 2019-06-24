@@ -88,8 +88,8 @@ class calculator extends JFrame implements ActionListener{
 		}else if(s.charAt(0)=='C'){
 			s0=s1=s2="";
 			l.setText(s0+s1+s2);
-		}else if(s.chatAt(0)=='='){
-			double te;
+		}else if(s.charAt(0)=='='){
+			double te=0;
 			if(s1.equals("+"))
 				te=(Double.parseDouble(s0)+Double.parseDouble(s2));
 			else if(s1.equals("-"))
